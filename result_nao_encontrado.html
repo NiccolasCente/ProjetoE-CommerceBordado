@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Miriam Bordados</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="cookies.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+    
+            <div class="cookies-btn">
+                <button onclick="aceito()">Aceito</button>
+            </div>
+        </div>
+    </div><!--cookies-msg-->
+    <script src="cookies.js"></script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Miriam Bordados</a>
+        <div id="navbar-items">
+          <div></div>
+          <form class="d-flex" id="search-form">
+            <script src="js.js"></script>
+            <i class="bi bi-search primary-color"></i>
+            <input class="form-control me-2" type="search" placeholder="Busque o produto de seu interesse..." aria-label="Search">
+            <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="search-results"></div>
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/mi.bordados/" target="_blank">
+              Instagram
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="abrirWhatsApp2()">
+              Contato
+            </a>
+  
+            <script>
+              function abrirWhatsApp2() {
+              var numeroTelefone = "5511940070057"; 
+              var urlWhatsApp = "https://wa.me/" + numeroTelefone;
+              window.open(urlWhatsApp, "_blank");
+             }
+            </script>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+  
+  <!-- Conteúdo específico para Resultado Toalha -->
+  <div class="container" id="result-container">
+    <h2 class="title primary-color">Resultados da Busca</h2>
+    <div class="row">
+      <div class="col-12 col-md-3">
+            <p>OPA, PARECE QUE ESTE PRODUTO NÃO ESTÁ EM NOSSO ESTOQUE!</p>
+            <P>Vendemos apenas Toalhas de Banho, Bordados e Panos de Prato</P>
+            <p>Para acessar as seções do site contendo os produtos, clique nos botões abaixo:</p>
+            <a  href="result_bordado.html" class="btn btn-primary" </a>Bordados</a>
+            <a  href="result_pano_de_prato.html" class="btn btn-primary" </a>Panos de Prato</a>
+            <a  href="result_toalha.html" class="btn btn-primary" </a>Toalhas</a>
+          </div>
+        </div>
+  </div>
+  <!-- ... Conteúdo da página ... -->
+  
+ <!-- Alguns Projetos -->
+ <div class="container" id="best-sellers">
+    <h2 class="title primary-color">Alguns Outros Projetos</h2>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/bestseller1.PNG" class="card-img-top img-fluid" alt="Bordado">
+          <div class="card-body">
+            <p class="card-category secondary-color">Bordado</p>
+            <h5 class="card-title">Bordado</h5>
+            <a class="btn btn-primary" onclick="abrirWhatsApp2()">Comprar</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/bestseller2.PNG" class="card-img-top img-fluid" alt="Pano de Prato">
+          <div class="card-body">
+            <p class="card-category secondary-color">Bordado</p>
+            <h5 class="card-title">Bordado</h5>
+            <a class="btn btn-primary" onclick="abrirWhatsApp2()">Comprar</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/bestseller3.PNG" class="card-img-top img-fluid" alt="Toalha">
+          <div class="card-body">
+            <p class="card-category secondary-color">Toalha</p>
+            <h5 class="card-title">Toalha</h5>
+            <a class="btn btn-primary" onclick="abrirWhatsApp2()">Comprar</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/bestseller4.PNG" class="card-img-top img-fluid" alt="Toalha">
+          <div class="card-body">
+            <p class="card-category secondary-color">Toalha</p>
+            <h5 class="card-title">Toalha</h5>
+            <a class="btn btn-primary" onclick="abrirWhatsApp2()">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BANNER DESTAQUE -->
+  <div class="container-fluid" id="bottom-banner">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <p class="primary-color offer-subtitle">Nos Chame no Whatsapp</p>
+        <h2 class="light-color"> Nos Chame para um orçamento </h2>
+        <p class="secondary-color">(11) 94007-0057</p>
+        <a class="btn btn-primary" onclick="abrirWhatsApp2()">Clique aqui para ir ao Whatsapp</a>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="bi bi-whatsapp custom-icon"></i>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- GALLERY -->
+  <div class="container-fluid" id="gallery">
+    <div class="row">
+      <div class="col-6 col-md-2 image-container" id="insta1">
+      </div>
+      <div class="col-6 col-md-2 image-container" id="insta2">
+      </div>
+      <div class="col-6 col-md-2 image-container" id="insta3">
+      </div>
+      <div class="col-6 col-md-2 image-container" id="insta4">
+      </div>
+      <div class="col-6 col-md-2 image-container" id="insta5">
+      </div>
+      <div class="col-6 col-md-2 image-container" id="insta6">
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container-fluid" id="footer-links-container">
+      <div class="row">
+        <div class="col-12 col-md-4 footer-column">
+          <h3>Desenvolvido por Niccolas Cente</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a  class="secondary-color" onclick="abrirWhatsApp()">Contato do Desenvolvedor do Site</a></li> 
+            <li class="mb-2"><a href="https://niccolascentedevelopments.netlify.app/" target="_blank" class="secondary-color">Site do Desenvolvedor do Site</a></li>
+          </ul>
+
+        </div>
+        <div class="col-12 col-md-4 footer-column" id="footer-center">
+          <h3>Miriam Bordados</h3>
+          <p class="secondary-color">Algum dúvida? Ligue para nós</p>
+          <p class="store-phone"><i class="bi bi-telephone"></i> (11) 94007-0057</p>
+        </div>
+        <div class="col-12 col-md-4 footer-column">
+          <h3>Informações</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="secondary-color">Há 4 anos entregando os melhores produtos</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Orçamentos apenas pelo WhatsApp</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Melhores preços</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="newsletter-container">
+      <div class="col-12">
+      <div class="col-12" id="social-container">
+        <a href="https://www.facebook.com/mirian.cente" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/mi.bordados/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+    <div class="container" id="copy-container">
+      <p>Todos os direitos reservados @2023 <span class="primary-color">Miriam Bordados</span> - A sua loja de Bordados, Toalhas de Banho e Pano de pratos.</p>
+    </div>
+  </footer>
+</body>
+</html>
