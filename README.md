@@ -25,8 +25,9 @@
 <br>
 
 <br>
-  <h4>Linguagens utilizadas:</h4>
+<footer>
+  <h2>Linguagens utilizadas:</h2>
   <p>JavaScript</p>
   <p>HTML5</p>
   <p>CSS3</p>
-
+</footer>
