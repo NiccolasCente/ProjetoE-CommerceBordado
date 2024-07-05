@@ -29,7 +29,7 @@
 
 <br>
 <footer>
-  <h2>Linguagens utilizadas:</h2>
+  <h2>Linguages used:(English)/Linguagens Usadas(Português - Brasil):</h2>
   <p>JavaScript</p>
   <p>HTML5</p>
   <p>CSS3</p>
