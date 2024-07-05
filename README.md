@@ -24,3 +24,9 @@
 <img align="center" alt="INDEX4"" src="https://github.com/NiccolasCente/ProjetoE-CommerceBordado/assets/100246795/7171274c-9ac1-4de2-acf7-a7439ad69c32">
 <br>
 
+<br>
+  <h4>Linguagens utilizadas:</h4>
+  <p>JavaScript</p>
+  <p>HTML5</p>
+  <p>CSS3</p>
+
