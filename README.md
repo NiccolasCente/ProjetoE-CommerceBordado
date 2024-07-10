@@ -33,4 +33,5 @@
   <p>JavaScript</p>
   <p>HTML5</p>
   <p>CSS3</p>
+  <p>Bootstrap</p>
 </footer>
